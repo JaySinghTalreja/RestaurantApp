@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <Space
+        android:id="@+id/spaceTemp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/regText"
+        android:layout_below="@+id/spaceTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textSize="40sp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:textColor="#FF9800"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/regText"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            />
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter you name here"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayoutOne"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:id="@+id/passwordTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password:"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:password="true"
+            android:hint="Enter Password Here"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:layout_below="@+id/linearLayoutTwo"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="#FF9800"
+        android:backgroundTint="#FF9800"
+        />
+</RelativeLayout>
